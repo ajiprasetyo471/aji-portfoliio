@@ -1,0 +1,9 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: #343a40;
+  color: white;
+}
+
+.jumbotron img {
+  width: 150px;
+}
