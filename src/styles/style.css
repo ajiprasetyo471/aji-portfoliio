@@ -1,5 +1,6 @@
 .jumbotron {
-  padding: 2rem 1rem;
+  padding-top: 2rem;
+  /* 262626 */
   background-color: #343a40;
   color: white;
 }
