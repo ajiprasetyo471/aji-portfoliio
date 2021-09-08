@@ -5,10 +5,14 @@ body {
 
 .jumbotron {
   padding-top: 2rem;
-  background-color: #212529;
+  background-color: #262626;
   color: white;
 }
 
 .jumbotron img {
   width: 150px;
+}
+
+#projects {
+  background-color: #262626;
 }
