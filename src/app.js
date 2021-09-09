@@ -4,6 +4,32 @@ const form = document.forms['aji-contact-form'];
 const btnSend = document.querySelector('.btn-send');
 const btnLoading = document.querySelector('.btn-loading');
 const myAlert = document.querySelector('.my-alert');
+const galleryImg = document.querySelectorAll('.gallery-img');
+
+galleryImg.forEach((img, i) => {
+  img.dataset.aos = 'fade-down';
+  img.dataset.aosDelay = i * 100;
+  img.dataset.aosDuration = 1000;
+});
+
+AOS.init({
+  duration: 1500,
+});
+gsap.registerPlugin(TextPlugin);
+gsap.to('.lead', { duration: 1.5, delay: 1, text: 'Student | Web Developer' });
+gsap.from('.jumbotron img', {
+  duration: 1,
+  rotateY: 360,
+  opacity: 0,
+});
+// gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+gsap.from('.display-4', {
+  duration: 1,
+  x: -50,
+  opacity: 0,
+  delay: 0.5,
+  ease: 'back',
+});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
