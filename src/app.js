@@ -31,6 +31,19 @@ gsap.from('.display-4', {
   ease: 'back',
 });
 
+$('.page-scroll').on('click', function (e) {
+  const target = $(this).attr('href');
+  const elTarget = $(target);
+  $('html, body').animate(
+    {
+      scrollTop: elTarget.offset().top - 20,
+    },
+    1000
+  );
+
+  e.preventDefault();
+});
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   btnLoading.classList.toggle('d-none');
